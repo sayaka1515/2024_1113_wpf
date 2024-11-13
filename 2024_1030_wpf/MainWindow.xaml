@@ -37,7 +37,7 @@
                 <Label Content="{Binding Value, ElementName=strokeThicknessSlider}" Width="65 " FontSize="14"
                   FontWeight="Bold"  VerticalAlignment="Top"/>
                 <Slider x:Name="strokeThicknessSlider" Width="120" VerticalAlignment="Center" Minimum="1" Maximum="10" 
-                        Value="1" TickFrequency="1" IsSnapToTickEnabled="True" Margin="-10,0,0,0" ValueChanged="strokeThicknessSlider_ValueChanged"/>
+                        Value="1" TickFrequency="1" IsSnapToTickEnabled="True" Margin="-10,0,0,0" ValueChanged="StrokeThicknessSlider_ValueChanged"/>
             </ToolBar>
             <ToolBar Width="300" Background="#FFB1D5FD">
                 <RadioButton Width="36" Height="36" Background="White" Click="ShapeButton_Click" Tag="line">
@@ -62,8 +62,8 @@
             </ToolBar>
             </ToolBarTray>
         <Canvas x:Name="myCanvas"  DockPanel.Dock="Top" Height="500"
-                 Background="#FFF7F3DE" MouseEnter="myCanvas_MouseEnter" MouseLeftButtonDown="myCanvas_MouseButtonDown" 
-                MouseMove="myCanvas_MouseMove" MouseLeftButtonUp="myCanvas_LeftButtonUp" />
+                 Background="#FFF7F3DE" MouseEnter="MyCanvas_MouseEnter" MouseLeftButtonDown="MyCanvas_MouseButtonDown" 
+                MouseMove="myCanvas_MouseMove" MouseLeftButtonUp="MyCanvas_LeftButtonUp" />
         <StatusBar Height="30" DockPanel.Dock="Bottom"
                    Background="LightGray">
             <StatusBarItem>
